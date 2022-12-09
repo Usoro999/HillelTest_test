@@ -1,4 +1,4 @@
-package PageObjects;
+package ToolsQAPages;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;

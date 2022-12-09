@@ -1,8 +1,9 @@
+package ToolsQATests;
+
 import Config.BaseTest;
-import PageObjects.MainPage;
+import ToolsQAPages.MainPage;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.WebDriver;
 
 public class FormTest extends BaseTest {
     static final String siteURL = "https://demoqa.com/automation-practice-form";

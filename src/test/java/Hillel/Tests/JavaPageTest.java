@@ -3,15 +3,22 @@ package Hillel.Tests;
 import Config.BaseTest;
 import Hillel_SitePages.JavaPage;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class JavaPageTest extends BaseTest {
     JavaPage javaPage = new JavaPage(driver);;
 
+    @Before
+    public void before(){
+        driver.get("https://ithillel.ua/courses/java-basic");
+    }
+
+
     @Test
     public void checkJavaPage(){
 
-        driver.get("https://ithillel.ua/courses/java-basic");
+
 
         // перевіряємо Rating курсу
         Assert.assertEquals("5", javaPage.getCourseRate());

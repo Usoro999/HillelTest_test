@@ -3,7 +3,10 @@ package Hillel_SitePages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
+
+import java.util.List;
 
 public class JavaPage {
     WebDriver driver;
@@ -19,6 +22,8 @@ public class JavaPage {
     WebElement courseHeader;
     @FindBy(xpath = "//div[@class = 'introduction-info_content introduction-info-redactor']/p")
     WebElement courseDescription;
+    @FindBys(@FindBy(xpath = "//div[@class = 'introduction-info-redactor_section']//li"))
+    List<WebElement> goals;
 
     public String getCourseRate() {
         return courseRate.getText();
@@ -35,5 +40,11 @@ public class JavaPage {
 
     public String getCourseDescription() {
         return courseDescription.getText();
+    }
+    public void getCourseGoals(){
+        for (WebElement s:goals) {
+            System.out.println(s.getText());
+        }
+
     }
 }

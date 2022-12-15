@@ -33,6 +33,8 @@ public class JavaPageTest extends BaseTest {
 
         // Description курсу
         System.out.println(javaPage.getCourseDescription());
+
+        javaPage.getCourseGoals();
     }
 
 }

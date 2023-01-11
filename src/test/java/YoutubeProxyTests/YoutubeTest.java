@@ -1,7 +1,6 @@
 package YoutubeProxyTests;
 
 import Config.BaseProxy;
-import Logs.Logs;
 import Utils.TakeScreenShots;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -10,7 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 
 
-public class ProxyTest extends BaseProxy {
+public class YoutubeTest extends BaseProxy {
 
     @BeforeClass
     public static void openPage(){

@@ -1,5 +1,6 @@
 package Config;
 
+import net.lightbody.bmp.BrowserMobProxyServer;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
@@ -7,9 +8,11 @@ import org.openqa.selenium.WebDriver;
 public class BaseTest {
     public static WebDriver driver;
 
+
+
     @BeforeClass
     public static void createDriver(){
-        driver = DriverConfig.createDriver(BROWSERS.CHROMEINCOGNITO);
+        driver = DriverConfig.createDriver(BROWSERS.CHROMEPROXY);
     }
 
     @AfterClass

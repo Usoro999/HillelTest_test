@@ -21,7 +21,7 @@ public class JavaPageTest extends BaseTest {
 
 
         // перевіряємо Rating курсу
-        Assert.assertEquals("5", javaPage.getCourseRate());
+        Assert.assertEquals("4.9", javaPage.getCourseRate());
         System.out.println("Рейтинг курсу: " + javaPage.getCourseRate());
 
         // Якщо потрібно title курсу

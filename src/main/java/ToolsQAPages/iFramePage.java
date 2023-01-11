@@ -33,7 +33,7 @@ public class iFramePage {
     }
 
     public Boolean checkVisibilityOfIFrame() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        WebDriverWait wait = new WebDriverWait(driver, 15);
         return wait.until(ExpectedConditions.visibilityOf(iFrameOne)).isEnabled();
 
 

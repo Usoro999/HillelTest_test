@@ -35,16 +35,19 @@ public class RickyAndMortyTest {
 
     @Test
     public void getAllNames(){
-        Characters charactersList = new Characters();
+
         List<String> listOfNames = new ArrayList<>();
         for(String l: urls){
-            charactersList = getCharacters(l);
+            Characters charactersList = getCharacters(l);
             for(Result r : charactersList.getResults()){
                 System.out.println("name: " + r.getName());
+                System.out.println("name: " + r.getStatus());
+                System.out.println("name: " + r.getSpecies());
+                System.out.println("=======================");
                 listOfNames.add(r.getName());
             }
         }
-        System.out.println("Names in list: " + listOfNames.size());
+        System.out.println("Characters in list: " + listOfNames.size());
     }
     }
 

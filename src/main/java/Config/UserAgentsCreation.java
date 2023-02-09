@@ -5,8 +5,8 @@ import net.lightbody.bmp.BrowserMobProxyServer;
     public class UserAgentsCreation {
         public static void createUserAgent(USERAGENT useragent, BrowserMobProxyServer server){
             switch(useragent){
-                case ANDROIDRU -> createAndroidAgentRU(server);
-                case ANDROIDEN -> createAndroidEN(server);
+                case ANDROIDRU: createAndroidAgentRU(server);
+                case ANDROIDEN : createAndroidEN(server);
             }
 
         }

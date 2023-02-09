@@ -16,7 +16,7 @@ public class BaseProxy extends BaseTest{
     @BeforeClass
     public static void startProxy(){
         serverBase.newHar("youtube");
-        UserAgentsCreation.createUserAgent(USERAGENT.ANDROIDRU, serverBase);
+        UserAgentsCreation.createUserAgent(USERAGENT.ANDROIDEN, serverBase);
     }
 
 

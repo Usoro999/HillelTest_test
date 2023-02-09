@@ -23,9 +23,9 @@ public class DriverConfig {
 
     public static WebDriver createDriver(BROWSERS browsers) {
         switch (browsers){
-            case CHROMEINCOGNITO -> createChrome();
-            case FIREFOX -> createFirefox();
-            case CHROMEPROXY -> createChromeProxy();
+            case CHROMEINCOGNITO : createChrome();
+            case FIREFOX : createFirefox();
+            case CHROMEPROXY : createChromeProxy();
         }
         return driver;
     }
@@ -64,7 +64,7 @@ public class DriverConfig {
 
 
     public static void createChrome() {
-       System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Java\\chromedriver.exe");
+       //System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Java\\chromedriver.exe");
 
         if (driver == null) {
 

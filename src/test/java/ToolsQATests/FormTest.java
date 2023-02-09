@@ -16,7 +16,7 @@ public class FormTest extends BaseTest {
             System.out.println(driver.getTitle());
         }
     }
-    @Test
+    @Test()
     public void checkFillForm(){
 
         mainPage.fillForm("Yurii",

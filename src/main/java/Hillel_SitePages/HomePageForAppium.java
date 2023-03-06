@@ -8,10 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class AppiumHomePage {
+public class HomePageForAppium {
     WebDriver driver;
 
-    public AppiumHomePage(WebDriver driver) {
+    public HomePageForAppium(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver,this);
     }

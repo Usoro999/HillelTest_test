@@ -1,11 +1,11 @@
 import AppiumConfig.AppiumBaseClass;
-import Hillel_SitePages.AppiumHomePage;
+import Hillel_SitePages.HomePageForAppium;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class HillelAppiumTest extends AppiumBaseClass {
 
-    AppiumHomePage appiumHomePage;
+    HomePageForAppium homePageForAppium;
     @BeforeMethod
     public void hillelHomePageStart(){
         driver.get("https://ithillel.ua");
@@ -13,16 +13,16 @@ public class HillelAppiumTest extends AppiumBaseClass {
 
     @Test
     public void checkFiveElementsOnPage(){
-        appiumHomePage = new AppiumHomePage(driver);
+        homePageForAppium = new HomePageForAppium(driver);
 
-        appiumHomePage.printTextFromConsultButton(); // print text button
-        appiumHomePage.scrollToTextProgrammingBox();
-        appiumHomePage.printAllCourses();            // print all courses from Hillel
-        appiumHomePage.printTextFromProgramuvanniaBox(); // print description of Programming course
-        appiumHomePage.scrollToQuestionBox();
-        appiumHomePage.printTextFromDescription();    // print text from question description
-        appiumHomePage.scrollToAdvantagesList();
-        appiumHomePage.printListOfAdvantages();       // print list of advantages
+        homePageForAppium.printTextFromConsultButton(); // print text button
+        homePageForAppium.scrollToTextProgrammingBox();
+        homePageForAppium.printAllCourses();            // print all courses from Hillel
+        homePageForAppium.printTextFromProgramuvanniaBox(); // print description of Programming course
+        homePageForAppium.scrollToQuestionBox();
+        homePageForAppium.printTextFromDescription();    // print text from question description
+        homePageForAppium.scrollToAdvantagesList();
+        homePageForAppium.printListOfAdvantages();       // print list of advantages
 
 
     }

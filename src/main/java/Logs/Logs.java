@@ -25,7 +25,7 @@ public class Logs {
     }
 
     public static void writeLogsToFile(WebDriver driver, String file, Level level){
-        LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
+        LogEntries logEntries = driver.manage().logs().get(LogType.SERVER);
 
         File savelogs = new File(file+".log");
         FileWriter fileWriter = null;

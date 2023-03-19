@@ -1,4 +1,4 @@
-package APIdata;
+package APItests.APIdata;
 
 public class Location {
         private String name;

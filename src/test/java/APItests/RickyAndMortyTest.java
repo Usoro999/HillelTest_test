@@ -1,18 +1,15 @@
 package APItests;
 
-import APIdata.Characters;
-import APIdata.Result;
-import io.restassured.http.ContentType;
+import APItests.APIdata.Characters;
+import APItests.APIdata.Result;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
-import static APIdata.GetCharacters.getCharacters;
-import static io.restassured.RestAssured.*;
+import static APItests.APIdata.GetCharacters.getCharacters;
 
 public class RickyAndMortyTest {
         List<String> urls = new ArrayList<>();

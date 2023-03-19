@@ -1,4 +1,4 @@
-package APIdata;
+package APItests.APIdata;
 
 import java.util.ArrayList;
 import java.util.Date;

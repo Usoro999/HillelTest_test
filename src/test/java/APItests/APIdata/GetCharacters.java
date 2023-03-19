@@ -1,11 +1,11 @@
-package APIdata;
+package APItests.APIdata;
+import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
-import static io.restassured.RestAssured.*;
 
 public class GetCharacters {
 
     public static Characters getCharacters(String url){
-        return   given()
+        return   RestAssured.given()
                 .when()
                 .contentType(ContentType.JSON)
                 .get(url)

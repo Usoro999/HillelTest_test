@@ -16,7 +16,7 @@ public class Logs {
 
     public static void printLogs(WebDriver driver){
 
-        LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
+        LogEntries logEntries = driver.manage().logs().get(LogType.SERVER);
 
         for(LogEntry logEntry : logEntries){
             System.out.println(new Date(logEntry.getTimestamp() + " " + logEntry.getLevel() + " " + logEntry.getMessage()));

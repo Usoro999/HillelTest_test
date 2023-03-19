@@ -1,4 +1,4 @@
-package APIdata;
+package APItests.APIdata;
 
 public class Origin {
         private String name;
